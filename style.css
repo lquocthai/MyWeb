@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    /* scroll-behavior: smooth; */
+    /* hành vi cuộn */
+    font-family: Helvetica,  Arial, sans-serif;
+}
+.d-flex {
+    display: flex;
+}
+.align-items-center {
+    align-items: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.col-half {
+    width: 50%;
+}
+#heading {
+    background-color: #000;
+    z-index: 1;
+}
+#heading .container {
+    margin: 0 5%;
+}   
+#heading .logo {
+    display: flex;
+
+}
+#heading .nav-link {
+    list-style: none;
+}
+#heading .logo a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.nav>ul>li {
+    white-space: nowrap;
+    padding: 5px 0 5px 30px;
+}
+#heading .nav-link a{
+    font-size: 13px;
+    padding: 20px 0;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 0.9;
+}
+#heading .nav-link a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    background-color: #fff;
+    animation: ease 0.5s;
+    visibility: hidden;
+}
+#heading .nav-link a:hover {
+    opacity: 1;
+}
+#heading .nav-link a::before:hover {
+    visibility: visible;
+}
+#bg-img {
+    height: 100vh;
+    background-size: contain;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* opacity: 0.9; */
+    position: relative;
+    top: 60.8px;
+}
+.main {
+}
+.about {
+    /* max-height: 500px; */
+}
+.about .img {
+    height: 100%;
+    z-index: 0;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    transform: translate(-50%, -50%);
+    font-size: 50px
+}
+.footer {
+    padding: 30px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.5;
+    z-index: 1;
+}
+.footer > a {
+    opacity: 0.8;
+}
+.footer > a:hover {
+    opacity: 1;
+}
